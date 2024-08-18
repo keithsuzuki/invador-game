@@ -50,7 +50,7 @@ function keyDownHandler(e) {
         player.dx = player.speed;
     } else if (e.key === 'Left' || e.key === 'ArrowLeft') {
         player.dx = -player.speed;
-    } else if (e.key === 'Space') {
+    } else if (e.key === ' ' || e.code === 'Space') { // スペースキーの判定
         e.preventDefault(); // デフォルトのスクロール動作を抑制
         bullets.push({
             x: player.x + player.width / 2 - bulletWidth / 2,
