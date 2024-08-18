@@ -51,6 +51,7 @@ function keyDownHandler(e) {
     } else if (e.key === 'Left' || e.key === 'ArrowLeft') {
         player.dx = -player.speed;
     } else if (e.key === 'Space') {
+        e.preventDefault(); // デフォルトのスクロール動作を抑制
         bullets.push({
             x: player.x + player.width / 2 - bulletWidth / 2,
             y: player.y,
