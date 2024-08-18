@@ -47,7 +47,6 @@ document.addEventListener('keyup', keyUpHandler);
 
 function keyDownHandler(e) {
     console.log(`Key pressed: ${e.key}, Code: ${e.code}`);
-    console.log(e.key); // キーの値を確認
     if (e.key === 'Right' || e.key === 'ArrowRight') {
         player.dx = player.speed;
     } else if (e.key === 'Left' || e.key === 'ArrowLeft') {
